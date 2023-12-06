@@ -1,5 +1,13 @@
 # py-wisdom-extractor 
 
+First, let me start by thanking Daniel Miessler of Unsupervised Learning for the idea to make this. He had already done the hard work of making the great prompt, and using the YouTubeAPI transcript library to pull transcripts from YouTube videos.
+
+He makes great content, I'm a subscriber, and member, and you should be too.
+
+https://danielmiessler.com/
+
+All I did was piggyback off the idea to make turn it into Markdown, and let myself choose from a couple different but similar prompts for different areas of thought.
+
 ## Description
 It's a python program that allows you to send a very specific prompt to the OpenAI API, along with a transcript from a YouTube Video, in order to get a summary of the important parts and ideas of the video in the form of a markdown file. 
 
