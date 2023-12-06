@@ -6,7 +6,7 @@ He makes great content, I'm a subscriber, and member, and you should be too.
 
 https://danielmiessler.com/
 
-All I did was piggyback off the idea to turn the response it into Markdown, and let myself choose from a couple different but similar prompts for different areas of thought.
+All I did was piggyback off the idea to turn the response into Markdown, and let myself choose from a couple different but similar prompts for different areas of thought.
 
 ## Description
 It's a python program that allows you to send a very specific prompt to the OpenAI API, along with a transcript from a YouTube Video, in order to get a summary of the important parts and ideas of the video in the form of a markdown file. 
