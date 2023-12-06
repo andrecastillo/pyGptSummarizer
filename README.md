@@ -13,7 +13,6 @@ You should check out the Open AI API Quick Start instructions, linked above, fir
 You'll need the OpenAI python library to make the API calls, again, if you followed the quickstart instructions it'll get you that. 
 
 You'll also need to install the youtube-transcript-api: see link for details and installation instructions https://pypi.org/project/youtube-transcript-api/ 
-You'll
 
 You'll need to create a prompt text file that goes in the prompts folder. I've created an example prompt file located in the root of the project called example_prompt, and it'll explain how you should structure your prompt for it to work with this code. You can create multiple prompts using a different text file per prompt, just keep the same format or adjust the code I guess if you wanted.  
 
