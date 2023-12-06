@@ -1,0 +1,17 @@
+# env files
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Directories
+prompts/*
+output/*
+extractions/*
+
+# Exclude specific directories
+!prompts/
+!output/
+!extractions/
