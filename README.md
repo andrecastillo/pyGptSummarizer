@@ -30,6 +30,6 @@ OR
 
 If you are in Ubuntu.
 
-You'll be prompted to choose a model, and then you'll be prompted to choose a prompt. After that, it'll run and the output when complete will show up in wherever you told it to.
+You'll be prompted to choose a model, and then you'll be prompted to choose a gpt prompt. After that, it'll run and the output when complete will show up in wherever you told it to.
 
 Have Fun!
