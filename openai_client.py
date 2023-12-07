@@ -1,6 +1,7 @@
 import os
 import openai
 
+
 def create_openai_completion(system_content, user_content, model="gpt-3.5-turbo"):
 
     print(f"\nPrompting model: {model}, please wait...")

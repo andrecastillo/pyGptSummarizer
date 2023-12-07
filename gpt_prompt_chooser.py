@@ -2,8 +2,10 @@ import sys
 import os
 from file_utils import read_content_from_file
 
+
 def list_prompt_files(directory):
-    return tuple(os.listdir(directory))
+    return tuple(file for file in os.listdir(directory) if file != '.gitignore')
+
 
 def select_prompt_file(files):
     print("\nChoose a prompt to use:")
@@ -12,6 +14,7 @@ def select_prompt_file(files):
     
     selection = int(input("\nSelect a prompt file (number): ")) - 1
     return files[selection] if 0 <= selection < len(files) else None
+
 
 def get_prompt_content():
     # dir where the prompt files are

@@ -1,4 +1,5 @@
 import os
+import json
 from dotenv import load_dotenv
 from video_id import get_video_id
 from transcript import get_clean_transcript
@@ -28,7 +29,12 @@ gpt_prompt = get_prompt_content()
 completion = create_openai_completion(gpt_prompt, transcript_cleaned, model)
 print(f"\nResponse received...")
 
-# do the work of cleaning and praparing the response, turning into dict, etc
+# save raw response before cleaning
+raw_response_path = os.getenv('RAW_RESPONSE_PATH', 'output/')
+with open(f"{raw_response_path}{completion['id']}", 'w') as raw_file:
+    json.dump(completion, raw_file, indent=4)
+
+# do the work of cleaning and preparing the response, turning into dict, etc
 response = get_cleaned_response(completion, model)
 
 # do the markdown stuff and write the file

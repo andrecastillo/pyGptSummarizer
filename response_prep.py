@@ -1,6 +1,7 @@
 import datetime
 from convert_to_json import convert_to_json
 
+
 def get_cleaned_response(completion, model):
 
     # seems like there's a difference in the way the models respond
