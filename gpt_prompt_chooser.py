@@ -1,5 +1,5 @@
-import sys
 import os
+import sys
 from file_utils import read_content_from_file
 
 

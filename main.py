@@ -1,10 +1,9 @@
 import os
 import json
 from dotenv import load_dotenv
-from video_id import get_video_id
-from transcript import get_clean_transcript
 from model_chooser import choose_gpt_model
 from gpt_prompt_chooser import get_prompt_content
+from choose_input_type import get_input_type
 from openai_client import create_openai_completion
 from response_prep import get_cleaned_response
 from markdown_converter import convert_to_markdown
@@ -13,20 +12,17 @@ from file_utils import write_markdown_to_file
 # get the environment information needed
 load_dotenv()
 
-# get video id from input command
-video_id = get_video_id()
-
-# get transcript and clean it
-transcript_cleaned = get_clean_transcript(video_id)
-
 # set the model var for use in the OpenAI API call
 model = choose_gpt_model()
 
 # read the prompt they chose into memory
-gpt_prompt = get_prompt_content()
+system_prompt_content = get_prompt_content()
+
+# get the user prompt content, either a video transcript or a text file
+user_prompt_content = get_input_type()
 
 # call openai api
-completion = create_openai_completion(gpt_prompt, transcript_cleaned, model)
+completion = create_openai_completion(system_prompt_content, user_prompt_content, model)
 print(f"\nResponse received...")
 
 # save raw response before cleaning

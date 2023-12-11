@@ -9,6 +9,7 @@ __pycache__/
 # Directories
 output/*
 extractions/*
+input/*
 .idea/
 
 # Exclude specific directories
