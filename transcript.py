@@ -1,14 +1,16 @@
 import sys
 from youtube_transcript_api import YouTubeTranscriptApi
 
+
 def get_clean_transcript(video_id):
     print("\nRetrieving transcript...")
-    transcript_data = YouTubeTranscriptApi.get_transcript(video_id)
+    transcript_data = YouTubeTranscriptApi.get_transcript(video_id, languages=['en', 'en-GB'])
     cleaned = ' '.join(segment['text'] for segment in transcript_data) 
     print("\nTranscript retreived and cleaned...")
     return cleaned
 
-# if i need to test just this script
+
+# If I need to test just this script
 if __name__ == "__main__":
 
     # get video id from command line argument
