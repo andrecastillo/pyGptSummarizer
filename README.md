@@ -11,7 +11,7 @@ All I did was piggyback off the idea to turn the response into Markdown, and let
 # Description
 It's a fairly rudimentary python program that allows you to send a very specific prompt to the OpenAI API, along with a transcript from a YouTube Video, or a text file, in order to get a summary of the important parts and ideas of the video in the form of a markdown file. 
 
-While there are tools that do something similar, this one works exactly how I want and expect it to. I've tailored to work specifically with Obsidian. It uses tags the way Obsidian uses them, and my extract path is directly into a local Obsidian vault (which of course you can change). 
+While there are tools that do something similar, this one works exactly how I want and expect it to. I've tailored it to work specifically with Obsidian. It uses tags the way Obsidian uses them, and my extract path is directly into a local Obsidian vault (which of course you can change). 
 
 # Installation and Setup
 
@@ -25,10 +25,11 @@ Lastly, you're going to need at least one prompt file in the `prompts/` director
 
 # Usage
 
-From the root of the project, after you've put in all the necessary values into your local .env file, just run 
+From the root of the project, after you've put in all the necessary values into your local .env file, run:
+
 `python main.py`
 
-Or If you are in Ubuntu.
+Or If you are in Ubuntu:
 
 `python3 main.py`
 
