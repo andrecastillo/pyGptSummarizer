@@ -47,14 +47,4 @@ Have Fun!
 
 https://platform.openai.com/docs/quickstart?context=python
 
-You should check out the Open AI API Quick Start instructions, linked above, first if you haven't already been using the OpenAI API as you'll need to get the API Secret Key and have it as one of your environment variables. When reviewing the instructions, don't worry about putting the key into your local environment (bash or whatever), as you'll be putting the key into the .env file in the root of your project.
-
-
-
-You'll need the OpenAI python library to make the API calls, again, if you followed the quickstart instructions it'll get you that. 
-
-You'll also need to install the youtube-transcript-api: see link for details and installation instructions https://pypi.org/project/youtube-transcript-api/ 
-
-There's a requirements.txt file, so you can install all the dependencies, including the ones named above. So, probably best to just use that.
-
-You'll need to create a prompt text file that goes in the prompts folder. I've created an example prompt file located in the root of the project called example_prompt, and it'll explain how you should structure your prompt for it to work with this code. You can create multiple prompts using a different text file per prompt, just keep the same format or adjust the code I guess if you wanted.  
+You should check out the Open AI API Quick Start instructions, linked above, first if you haven't already been using the OpenAI API as you'll need to get the API Secret Key and have it as one of your environment variables. When reviewing the instructions in the quickstart linked above, don't worry about putting the key into your local environment (bash or whatever), as you'll be putting the key into the .env file in the root of your project.
